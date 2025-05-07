@@ -1,48 +1,61 @@
-# 🎯 Task 8: Customer Segmentation using K-Means Clustering
+# Task 8 - K-Means Clustering
 
-This project applies **K-Means Clustering** to segment customers based on their annual income and spending score using the **Mall Customers** dataset. The clustering results help businesses understand different customer groups for targeted marketing.
+## 🎯 Objective
+Segment mall customers into distinct groups using K-Means clustering based on their annual income and spending score.
 
----
+## 📁 Dataset
+- Name: `Mall_Customers.csv`
+- Source: [Kaggle - Mall Customer Segmentation Data](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
 
-## 📁 Files Included
+## 🛠 Tools Used
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-- `task8.py` — Python script for clustering and visualization
-- `Mall_Customers.csv` — Dataset containing customer information
-- Plot screenshots —  elbow and cluster plots
+## 🧪 Steps Performed
+1. Loaded and explored the dataset
+2. Selected relevant features for clustering
+3. Applied the Elbow Method to find the optimal number of clusters
+4. Implemented K-Means clustering with optimal `k`
+5. Visualized the resulting customer clusters
+6. Evaluated model performance using Silhouette Score
 
----
+## ✅ Sample Output
 
-## 🧠 Objectives
+📥 Dataset loaded successfully:
+CustomerID Gender Age Annual Income (k$) Spending Score (1-100)
+0 1 Male 19 15 39
+1 2 Male 21 15 81
+2 3 Female 20 16 6
+3 4 Female 23 16 77
+4 5 Female 31 17 40
 
-- Load and explore the Mall Customers dataset
-- Apply the **Elbow Method** to determine the optimal number of clusters
-- Implement **K-Means Clustering** using Scikit-learn
-- Visualize customer segments
-- Evaluate clustering performance using **Silhouette Score**
 
----
+📈 Elbow Method Output:
+- Optimal number of clusters: **5**
 
-## 📊 Dataset Information
+📊 Silhouette Score: `0.55`
 
-**Source**: Kaggle  
-**Columns Used**:
-- `Annual Income (k$)`
-- `Spending Score (1-100)`
+🧬 Cluster Labels assigned:
 
----
+🎨 Cluster visualization shown with distinct colors.
 
-## 🔧 Libraries Used
+## 📌 Feature Importances
+(Not applicable to K-Means — all features used equally)
 
-- `pandas` — Data manipulation
-- `matplotlib` & `seaborn` — Data visualization
-- `scikit-learn` — K-Means algorithm & evaluation
+## 💡 What I Learned
+- How to implement **K-Means clustering** for unsupervised learning
+- How to determine the optimal number of clusters using the **Elbow Method**
+- How to evaluate cluster cohesion using the **Silhouette Score**
+- How to visualize high-dimensional customer segmentation data
 
----
+## 📊 Plots Generated
+- Elbow Method plot for `k` selection
+- Scatter plot showing the 5 customer clusters
 
-## 🚀 How to Run
-
-1. Make sure Python and pip are installed.
-2. Install dependencies:
-   ```bash
-   pip install pandas matplotlib seaborn scikit-learn
-✅ Silhouette Score: 0.55
+## 📤 Submission Files
+- `task8.py` – Python code for clustering
+- `Mall_Customers.csv` – Dataset file
+  
