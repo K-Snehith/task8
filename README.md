@@ -8,8 +8,7 @@ This project applies **K-Means Clustering** to segment customers based on their 
 
 - `task8.py` — Python script for clustering and visualization
 - `Mall_Customers.csv` — Dataset containing customer information
-- `cleaned_clusters.csv` — (optional) clustered output if saved
-- Plot screenshots — (optional) elbow and cluster plots
+- Plot screenshots —  elbow and cluster plots
 
 ---
 
@@ -46,3 +45,4 @@ This project applies **K-Means Clustering** to segment customers based on their 
 2. Install dependencies:
    ```bash
    pip install pandas matplotlib seaborn scikit-learn
+✅ Silhouette Score: 0.55
